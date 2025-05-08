@@ -85,7 +85,7 @@ section {
 
 /* Adjust the size of the logo */
 .logo {
-  width: 300px; /* Increase the width */
+  width: 500px; /* Increase the width to make the logo larger */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Center the image */
   margin: 0 auto; /* Center horizontally */
@@ -93,7 +93,7 @@ section {
 
 /* General rule for all images */
 img {
-  max-width: 90%; /* Allow images to scale up to 90% of their container */
+  max-width: 100%; /* Allow images to scale up to their container's full width */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Center images by default */
   margin: 20px auto; /* Add spacing and center horizontally */
