@@ -83,16 +83,17 @@ section {
 }
 
 .logo {
-  width: 500px; /* Increase the width to make the logo larger */
+  width: 800px; /* Set a larger width */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Center the image */
   margin: 0 auto; /* Center horizontally */
 }
 
 img {
-  max-width: 100%; /* Allow images to scale up to their container's full width */
+  max-width: none; /* Remove any container restrictions */
+  width: 800px; /* Set a larger width for all images */
   height: auto; /* Maintain aspect ratio */
-  display: block; /* Center images by default */
+  display: block; /* Center images */
   margin: 20px auto; /* Add spacing and center horizontally */
 }
 
