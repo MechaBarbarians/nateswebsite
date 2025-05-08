@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   background-color: #2A4D14; /* dark jade green */
   color: #A228B6;           /* vivid robotics purple */
   line-height: 1.6;
@@ -83,18 +83,8 @@ section {
 }
 
 .logo {
-  width: 800px; /* Set a larger width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Center the image */
-  margin: 0 auto; /* Center horizontally */
-}
-
-img {
-  max-width: none; /* Remove any container restrictions */
-  width: 800px; /* Set a larger width for all images */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Center images */
-  margin: 20px auto; /* Add spacing and center horizontally */
+  width: 100px;
+  height: 150px;
 }
 
 /* Cards / Project blocks */
