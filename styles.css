@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #2A4D14; /* dark jade green */
   color: #A228B6;           /* vivid robotics purple */
   line-height: 1.6;
@@ -85,7 +85,7 @@ section {
 
 /* Adjust the size of the logo */
 .logo {
-  width: 500px; /* Increase the width to make the logo larger */
+  width: 300px; /* Increase the width */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Center the image */
   margin: 0 auto; /* Center horizontally */
@@ -93,7 +93,7 @@ section {
 
 /* General rule for all images */
 img {
-  max-width: 100%; /* Allow images to scale up to their container's full width */
+  max-width: 90%; /* Allow images to scale up to 90% of their container */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Center images by default */
   margin: 20px auto; /* Add spacing and center horizontally */
