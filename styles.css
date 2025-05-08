@@ -1,189 +1,187 @@
-/* styles.css */
+/* ===========================================================
+   styles.css — Peterson’s Robotics & Innovation
+   (Jade‑green background with purple text)
+   =========================================================== */
 
-/* Root variables */
+/* ——— 1) Color & font variables ————————————————————————— */
 :root {
-    --color-primary: #5D3FD3;    /* Professional Indigo‑Purple */
-    --color-secondary: #00A878;  /* Modern Jade Green */
-    --color-light: #f9f9f9;
-    --color-dark: #333333;
-    --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  }
-  
-  /* Reset & box sizing */
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Base styles */
-  html {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  body {
-    font-family: var(--font-family);
-    color: var(--color-dark);
-    background-color: var(--color-light);
-  }
-  
-  /* Links */
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: var(--color-secondary);
-  }
-  
-  /* Utility classes */
-  .text-center { text-align: center; }
-  .mt-1 { margin-top: 1rem; }
-  .mt-2 { margin-top: 2rem; }
-  .mb-1 { margin-bottom: 1rem; }
-  .mb-2 { margin-bottom: 2rem; }
-  .hidden { display: none !important; }
-  
-  /* Container */
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 0;
-  }
-  
-  /* Header & Navigation */
-  header {
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-  }
-  
-  .logo {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: var(--color-primary);
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav li + li {
-    margin-left: 1.5rem;
-  }
-  
-  .nav-link {
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  /* Buttons */
-  .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-primary);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: var(--color-secondary);
-  }
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    background: url('../images/hero-bg.jpg') center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 4rem 0;
-  }
-  
-  .hero .btn {
-    background-color: var(--color-secondary);
-  }
-  
-  /* Sections */
-  section {
-    padding: 4rem 0;
-  }
-  
-  /* Project Cards Grid */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .project-card .card-content {
-    padding: 1.5rem;
-  }
-  
-  .project-card h3 {
-    margin-bottom: 0.5rem;
-    color: var(--color-primary);
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333333;
-    color: #eeeeee;
-    text-align: center;
-    padding: 2rem 0;
-  }
-  
-  footer a {
-    color: var(--color-secondary);
-  }
-  
-  /* Responsive images */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Fade‑in animation */
-  .fade-in {
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+  --color-primary:   #5D3FD3;  /* Indigo‑purple (text) */
+  --color-secondary: #00A878;  /* Jade‑green (background) */
+  --color-light:     #F9F9F9;
+  --color-dark:      #333333;
+  --font-family:     'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --transition:      all 0.3s ease;
+}
+
+/* ——— 2) Reset & box sizing —————————————————————————————— */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* ——— 3) Utility helpers ——————————————————————————————————— */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* ——— 4) Links & buttons ——————————————————————————————————— */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--color-light);
+}
+
+/* .button for support page & generic .btn */
+.button,
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+.button:hover,
+.btn:hover {
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+}
+
+/* ——— 5) Layout containers ————————————————————————————— */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* ——— 6) Header & navigation ————————————————————————————— */
+header {
+  background-color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-primary);
+}
+.navbar,
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo {
+  max-height: 50px;
+}
+nav ul li + li {
+  margin-left: 1.5rem;
+}
+nav a {
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  color: var(--color-primary);
+}
+nav a.active {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* ——— 7) Main content & typography ————————————————————————— */
+main {
+  padding: 3rem 0;
+}
+h1, h2, h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+/* Projects list (projects.html) */
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+main ul li {
+  margin-bottom: 0.75rem;
+}
+main ul li a {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+main ul li a:hover {
+  color: var(--color-light);
+}
+
+/* ——— 8) Project Cards Grid —————————————————————————————— */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-card .card-content {
+  padding: 1.5rem;
+}
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+/* ——— 9) Footer ——————————————————————————————————————— */
+footer {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+/* ——— 10) Responsive images & media ——————————————————————— */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ——— 11) Simple fade‑in animation ——————————————————————— */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
