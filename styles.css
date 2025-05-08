@@ -82,19 +82,19 @@ section {
   margin: 0 auto;
 }
 
-.logo {
-  width: 800px; /* Set a larger width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Center the image */
-  margin: 0 auto; /* Center horizontally */
+img {
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* Ensures the image scales within its container */
+  height: auto; /* Maintains aspect ratio */
 }
 
-img {
-  max-width: none; /* Remove any container restrictions */
-  width: 800px; /* Set a larger width for all images */
+/* Specific rule for the .logo class */
+.logo {
+  width: 800px; /* Set a specific width for the logo */
   height: auto; /* Maintain aspect ratio */
-  display: block; /* Center images */
-  margin: 20px auto; /* Add spacing and center horizontally */
+  display: block; /* Ensures the logo is treated as a block element */
+  margin: 0 auto; /* Centers the logo horizontally */
 }
 
 /* Cards / Project blocks */
