@@ -45,6 +45,33 @@ nav a:hover {
   border-radius: 4px;
 }
 
+/* Navigation styles */
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Make the list items display in a row */
+  justify-content: center; /* Center the navigation items horizontally */
+}
+
+nav ul li {
+  margin: 0 15px; /* Add spacing between navigation items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #FFF; /* Set link color */
+  font-weight: bold; /* Make the text bold */
+  padding: 10px 15px; /* Add padding for clickable area */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #A228B6; /* Change background color on hover */
+  color: #FFF; /* Ensure text remains visible */
+}
+
 /* Buttons */
 .button, button {
   font-family: inherit;
